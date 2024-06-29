@@ -43,6 +43,10 @@ public class WebController {
         return ResponseEntity.ok(request.getUserPrincipal());
     }
 
+    @GetMapping("/")
+    public String getHome() {
+        return "Home";
+    }
     ///////////////////
     @GetMapping("/dashboard")
     public String getDashboard() {
